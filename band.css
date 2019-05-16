@@ -3,7 +3,13 @@ body {
     font-family: "Roboto Condensed","Tw Cen MT", "Agency FB";
     background-color: black;
     color: white;
-	}    
+	}
+h1 {
+	font-size: 50px;
+    }
+h2 {
+	font-size: 30px;
+    }
 * {
   	box-sizing: border-box;
 }
@@ -56,9 +62,11 @@ body {
      /* multi-use banner */
 .banner {
 	float: left;
-	background-color: #333;
+	background-color: #373636;
     text-align: center;
     width: 100%;
+    padding: 0px 5px;
+    
     }
     
    /* the band */
@@ -86,7 +94,7 @@ body {
     
  	/* tours table */
 tr:nth-child(even) {
-	background-color: #333;
+	background-color: #373636;
     }
 table {
 	border-collapse: collapse;
@@ -103,7 +111,28 @@ table {
     padding: 10px;
     }
 .tours-table th {
-	background-color: white;
-    color: black;
+	background-color: #333;
     }
-	
+    
+	/* releases */
+.release-type {
+	text-align: center;
+    padding-top: 15px;
+	}
+.release-card {
+	outline: solid 1.5px #333;
+    height: 300px;
+    margin: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+	}
+.release-card img {
+	max-height: 300px;
+	}
+.songs {
+	column-count: 3;
+    }
+.card-left img {
+	float: left;
+    padding-right: 30px;    
+    }
