@@ -1,4 +1,3 @@
-body {
 	margin: 0;
     font-family: "Roboto Condensed","Tw Cen MT", "Agency FB";
     background-color: black;
@@ -129,10 +128,21 @@ table {
 .release-card img {
 	max-height: 300px;
 	}
-.songs {
+.album-songs {
 	column-count: 3;
     }
 .card-left img {
 	float: left;
     padding-right: 30px;    
     }
+.card-right {
+	text-align: right;
+	}
+.card-right img {
+	float: right;
+    padding-left: 30px;
+    }
+.card-right li {
+    list-style-position: inside;
+    }
+	
