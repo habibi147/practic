@@ -1,4 +1,5 @@
-	margin: 0;
+body {	
+    margin: 0;
     font-family: "Roboto Condensed","Tw Cen MT", "Agency FB";
     background-color: black;
     color: white;
@@ -145,4 +146,13 @@ table {
 .card-right li {
     list-style-position: inside;
     }
-	
+
+/* footer	*/
+.footer {
+  background-color: #373636;
+  text-align: center;
+  padding: 10px 10px;
+}
+.footer a {
+  color: aliceblue
+}
