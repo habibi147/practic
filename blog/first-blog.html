@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>blog practice</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+
+</head>
+<body>
+    <!-- navbar -->
+<div id="navbar">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-snapchat"></i></a>
+    <div class="navbar-right">
+        <a href="#"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+
+
+
+    <!-- title -->  
+<div class="title">
+    <h1>BEN'S BLOGLIFE</h1>
+    <p>Welcome to the blog of <span class="name-tag"> Ben Grant</span></p>
+</div>
+
+        <!-- image -->
+<div class="image-header">
+    <img width="1600" height="1060" src="https://s29823.pcdn.co/wp-content/uploads/2018/04/perito-moreno-patagonia.jpg.optimal.jpg">
+    <div class="image-header-text-container">
+        <div class="image-header-text">
+        <h2>Ben Grant's</h2>
+        <h1>FUCKEN SICK BLOG</h1>
+        <h2><button class="button-subscribe">SUBSCRIBE</button></h2>
+    </div>
+</div>
+
+   <!-- columns if i can -->
+<div class="row">
+        <!-- blog posts -->
+    <div class="column-left">
+        <div class="card">
+            <div class="card-title">
+                <h1>First Post!</h1>
+                <h4>20 April 2019</h4>
+            </div>
+            <img src="https://www.rollingstone.com/wp-content/uploads/2018/11/jimi-hendrix-performing-in-1969.jpg?crop=900:600&width=440">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        </div>
+        <div class="card">
+            <h1>Calloom A.K.A. Pesto Sauce</h1>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+        <!-- About me card -->
+    <div class="column-right">
+        <div class="card-about">
+            <img src="http://wallpapersqq.net/wp-content/uploads/2016/03/scarlett-johansson-black-and-white-hd-wallpapers-for-desktop.jpg">
+            <h2>About Me</h2>
+            <p style="padding:16px;">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- navbar script -->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>
