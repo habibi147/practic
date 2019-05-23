@@ -1,0 +1,131 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald"
+}
+body {
+    margin: 0;
+    font-family: "Open Sans";
+    max-width: 1600px;
+    background-color: #E8E8E8;
+}
+* {
+    box-sizing: border-box;
+}
+    /* navbar */
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    z-index: 1;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: .1s;
+}
+#navbar a:hover {
+    background-color: white;
+    color: black;
+}
+.navbar-right {
+    float: right;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 30px;
+}
+
+    /* content */
+
+    /* header */
+.title {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.title h1 {
+    font-size: 50px;
+}
+.name-tag {
+    color: white;
+    background-color: black;
+}
+.image-header {
+    float: center; 
+    overlow: auto; 
+}
+.image-header img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.image-header-text-container {
+    position: relative;
+    text-align: left;
+    color: black;
+}
+.image-header-text {
+    position: absolute;
+    top: -300px;
+    left: 30px;
+   }
+.button-subscribe {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255, 0.5);    
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Oswald";
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button-subscribe:hover {
+    background-color: rgb(255, 255, 255)
+}
+    /* end of header */
+
+    /* columns for content */
+.column-left {   
+    float: left;
+    width: 65%;
+}
+.column-right {
+    float: left;
+    width: 35%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card {
+    padding: 20px;
+    margin: 16px;
+    background-color: white;
+    overflow: auto;
+}
+.card-title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.card-about {
+    padding: 0;
+    margin: 16px;
+    background-color: white;
+    overflow: auto;
+}
+.card-about h2 {
+    margin-top: 0;
+    color: white;
+    background-color: black;
+    padding: 16px;
+}
