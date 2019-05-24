@@ -136,42 +136,46 @@ body {
 }
 .card-title h4 {
     font-size: 18px;
-    padding-top: 9px;
 }
 .card-title  {
     float: right;
     text-align: right;    
 }
 .card-footer {
+    clear: right;
     background-color: black;
     color: white;
     padding: .05px;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 .card-footer a {
     text-decoration: none;
     color: white;
+    opacity: 0.855;
+    transition: .1s;
 }
-.card-footer i {
-    display: inherit;
-    text-align: right;
-    padding: 20px;
-    float: right;
-    padding-top: 5px;
+.card-footer a:hover {
+    opacity: 1;
 }
-
-
+.card-footer h3 {
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+    /* right columns */
 .card-right {
     padding: 0;
     margin: 16px;
     background-color: white;
-   
 }
 .card-right h2 {
     margin-top: 0;
     color: white;
     background-color: black;
     padding: 16px;
+}
+.card-right p {
+    padding: 0px 20px 20px 20px;
 }
 .card-pop-posts {
     margin: 5px;
@@ -186,8 +190,41 @@ body {
     color: black;
 }
 .card-pop-posts h3 a {
-    font-size: 27px;
+    font-size: 20px;
     text-decoration: none;
+}
+.card-tags {
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 10px;
+    line-height: 26px;
+    }
+.card-tags a {
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+.card-tags a:hover {
+    background-color: black;
+    color: white;
+}
+.card-button-subscribe {    
+    text-align: center;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: red;
+    font-size: 20px;
+    margin: 0px 20px 20px 20px;
+    width: 90%;
+    cursor: pointer;
+}
+.email {
+    padding: 10px;
+    width: 90%;
+    margin: 0px 20pc 20px 20px;
 }
 .ad {
     padding: 25px;
