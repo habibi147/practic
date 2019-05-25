@@ -17,7 +17,7 @@
 <body>
     <!-- navbar -->
 <div id="navbar">
- 5    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-youtube"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -42,7 +42,7 @@
         <div class="image-header-text">
         <h2>Ben Grant's</h2>
         <h1>FUCKEN SICK BLOG</h1>
-        <h2><button class="button-subscribe">SUBSCRIBE</button></h2>
+        <h2><button class="button-subscribe" onclick="document.getElementById('id01').style.display='block'">SUBSCRIBE</button></h2>
     </div>
 </div>
 
@@ -159,7 +159,37 @@
 </div> 
 <!-- end row -->
 
+    <!-- footer -->
+<div class="footer">
+    <h2><a href="#"><i class="fa fa-arrow-circle-up"></i>
+    </a></h2>
+    <p><a href="#">Website built by Habibi147</a></p>
+</div>
 
+    <!-- modal subcsrube -->
+<div id="id01" class="modal">  
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+            <h1>Thanks for browsing my site!</h1>
+            <p>If you like what you see leave your email below to receive updates!</p>
+            <input type="text" placeholder="Enter Email" name="uname" required>
+            <button class="modal-submit" type="submit">SUBMIT</button>
+        </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">CANCEL</button>
+    </div>
+  </form>
+</div>
+    <!-- modal subscribe script -->
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
     <!-- navbar script -->
 <script>
