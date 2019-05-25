@@ -1,12 +1,14 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: "Oswald"
 }
-body {
+body, input {
     margin: 0;
     font-family: "Open Sans";
     background-color: #E8E8E8;
-    align-content: center;
-    
+    align-content: center;  
+}
+button {
+    font-family: "Oswald"
 }
 ::selection {
   color: white;
@@ -142,11 +144,12 @@ body {
     text-align: right;    
 }
 .card-footer {
-    clear: right;
+    float: right;
+    display: inline;
     background-color: black;
     color: white;
-    padding: .05px;
-    padding-left: 20px;
+    padding: 0 20px;
+    width: 100%;
 }
 .card-footer a {
     text-decoration: none;
@@ -157,9 +160,13 @@ body {
 .card-footer a:hover {
     opacity: 1;
 }
+.card-footer h2 {
+    float: left;
+}
 .card-footer h3 {
+    text-align: right;
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: 20px;
     padding-top: 0px;
 }
     /* right columns */
@@ -224,9 +231,121 @@ body {
 .email {
     padding: 10px;
     width: 90%;
-    margin: 0px 20pc 20px 20px;
+    margin: 0px 20px 20px 20px;
 }
 .ad {
     padding: 25px;
     background-color: grey;
+}
+
+    /* footer */
+.footer {
+    text-align: center;
+    padding: 8px;
+    background-color: black;
+    line-height: 20%;
+}
+.footer a {
+    color: white;
+}
+
+    /* modal subscribe */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.cancelbtn:hover {
+    background-color: black;
+    color: white;
+}
+.modal-submit {
+    width: auto;
+    padding: 10px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.modal-submit:hover {
+    background-color: #E8E8E8;
+    color: black;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #E8E8E8;
+    width: 80%;
+}
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+.modal-submit {
+    width: auto;
+    padding: 10px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 8px 0;
+}
+/* zoom animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }
