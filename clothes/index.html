@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>clothes.com</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- logo -->
+<div class="toplogo">
+    <h1>CLOTHES.COM</h1>
+</div>
+
+    <!-- navbar -->
+<div class="navbar">
+    <a class="active" href="#"><i class="fas fa-mars"></i> Men</a> 
+    <a href="women.html"><i class="fas fa-venus"></i> Women</a> 
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="navbar-right">
+        <a href="#"><i class="fas fa-cart-arrow-down"></i> 0</a>
+        <a href="#"><i class="fas fa-user-tag"></i></a>
+    </div>
+</div>
+
+    <!-- tabs for categories -->
+    <!-- tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCat(event,'New')" id="defaultOpen">New!</button>
+    <button class="tablinks" onclick="openCat(event, 'Shoes')">Shoes</button>
+    <button class="tablinks" onclick="openCat(event, 'Jackets')">Jackets/Coats</button>
+    <button class="tablinks" onclick="openCat(event, 'Jumpers')">Jumpers</button>
+    <button class="tablinks" onclick="openCat(event, 'Shirts')">Shirts</button>
+    <button class="tablinks" onclick="openCat(event, 'Trousers')">Trousers/Jeans</button>
+</div>
+
+    <!--tab content -->
+<div id="New" class="tabcontent">
+    <img src="https://cdn.shopify.com/s/files/1/1846/3175/t/4/assets/home-banner.jpg?12">
+    <div class="summer-sale">
+        <h1>SUMMER SALE</h1>
+    </div>
+    <div class="now-on">
+        <h1>NOW ON!</h1>
+    </div>
+</div>
+    <!-- end new -->
+
+<div id="Shoes" class="tabcontent">
+    <img src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enGB/Images/SS19_3MC_HP_TeaserLarge2x1-Desktop-960x480_tcm143-344410.jpg">
+</div>
+    <!-- end shoes -->
+
+<div id="Jackets" class="tabcontent">
+    <img  src="https://cdn.shopify.com/s/files/1/0740/8743/files/40off_jackets_1_2000x.jpg?v=1558710028">
+    <div class="column">
+        <h1>Clothe.</h1>
+    </div>
+    <div class="column">
+        <h1>Clothe.</h1>
+    </div>
+    <div class="column">
+        <h1>Clothe.</h1>
+    </div>
+    <div class="column">
+        <h1>Clothe.</h1>
+    </div>
+</div>
+    <!-- end jackets -->
+
+<div id="Jumpers" class="tabcontent">
+    <img src="https://cdn.shopify.com/s/files/1/0051/0392/t/11/assets/frontpage_collection_14_banner.jpg?326">
+</div> 
+    <!-- end jumpers -->
+
+
+<div id="Shirts" class="tabcontent">
+    <img src="https://www.prettygreen.com/media/homepage/SHOT_12_063_web_banner.jpg">
+</div>
+    <!-- end shirts -->
+
+<div id="Trousers" class="tabcontent">
+    <img src="http://www.ailsymudiad.co.uk/includes/templates/sunshinechildrendaynursery/images/banner.jpg">
+</div>
+    <!-- end trousers -->
+    <!-- end tab content -->
+
+    <!-- tab script -->
+<script>
+function openCat(evt, catName) {
+var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+}
+    tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+
+
+    document.getElementById(catName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
