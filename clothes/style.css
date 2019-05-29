@@ -92,7 +92,7 @@ body {
     padding: none;
     border: 1px solid rgb(231, 231, 231);
     border-top: none;
-    background-color: rgb(231, 231, 231);
+    background-color: #D3D3D3;
 }
 .tabcontent img {
     width: 100%;
@@ -117,15 +117,66 @@ body {
 }
 
     /* jackets and coats */
-.row:after {
+
+.sort {
+    position: relative;
+    margin-left: 983px;
+}
+.sort select {
+    display: none; /
+}
+.select-selected {
+    background-color: black;
+}
+.select-selected:after {
+    position: absolute;
     content: "";
-    display: table;
-    clear: both;
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+.select-items {
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.column-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;   
 }
 .column {
     background-color: white;
-    margin: 4px;
     float: left;
-    padding: 10px;
-    width: 24%;
+    margin: 10px;    
+    height: 450px;
+    width: 300px;
 }
+.column img {
+    min-height: 450px;
+}
+
