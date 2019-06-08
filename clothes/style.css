@@ -15,35 +15,36 @@ body {
 
     /* navbar */
 .navbar {
-    background-color: #333;
+    background-color: white;
     overflow: hidden;
 }
 .navbar a {
     float: left;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 12px 14px;
     text-decoration: none;
     font-size: 17px;
-    transition: .1s;
     font-size: 20px;
     font-family: 'Kanit';
 }
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+    transition: .1s;
 }
 .navbar a.active {
-    background-color: grey;
+    background-color: black;
     color: white;
 }
 .navbar input[type=text] {
     float: right;
-    padding: 6px;
+    padding: 3px;
     border: none;
-    margin-top: 11px;
+    margin-top: 13px;
     margin-right: 14px;
     font-size: 20px;
+    outline: 1px solid black;
 }
 .navbar .search-container button {
     float: right;
@@ -63,7 +64,7 @@ body {
     /* tab styles */
 .tab {
     overflow: hidden;    
-    background-color: grey;
+    background-color: black;
     
 }
 .tab button {
@@ -79,11 +80,11 @@ body {
     font-family: 'Kanit';
 }
 .tab button:hover {
-    background-color: #ddd;
+    background-color: rgb(238, 238, 238);
 }
 .tab button.active {
     color: black;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
 }
 .tabcontent {
     min-height: 500px;
@@ -92,35 +93,64 @@ body {
     padding: none;
     border: 1px solid rgb(231, 231, 231);
     border-top: none;
-    background-color: #D3D3D3;
+    background-color: rgb(226, 226, 226);
 }
 .tabcontent img {
+    position: relative;
     width: 100%;
 }
 
-    /* New */
-.summer-sale {
-    color: white;
-    position: absolute;
-    top: 250px;
-    left: 75px;
-    font-size: 26px;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    /* pagination */
+.pagination-center {
+    text-align: center;
 }
-.now-on {
-    color: white;
-    position: absolute;
-    top: 250px;
-    right: 85px;
-    font-size: 26px;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+.pagination {
+    display: inline-block;
+    text-align: center;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
-    /* jackets and coats */
+.pagination a.active {
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
 
+.pagination a:hover:not(.active) {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.column-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.column {
+    background-color: white;
+    float: left;
+    margin: 10px;    
+    height: 450px;
+    width: 300px;
+    outline: none;
+}
+.column img {
+    min-height: 450px;
+    outline: 2px solid black;
+}
+
+
+    /* sort by */
 .sort {
     position: relative;
-    margin-left: 983px;
+    margin-left: 10%;
 }
 .sort select {
     display: none; /
@@ -164,19 +194,63 @@ body {
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
 }
-.column-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;   
+    /* END sort by */
+
+    /* footer */
+.footer {
+    position: flex;
+    display: block;
+    background-color: grey;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding: 1px;
 }
-.column {
-    background-color: white;
-    float: left;
-    margin: 10px;    
-    height: 450px;
-    width: 300px;
+.footer-left {   
+    clear: both;
+    text-align: left;
 }
-.column img {
-    min-height: 450px;
+.footer-right {
+    clear: both;
+    float: right;   
+    text-align: right;
 }
 
+    /* index */
+.news-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: auto;
+}
+.news-banner-txt {
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.news-banner p {
+    font-size: 20px;
+}
+    /* END index */
+
+    /* men */
+
+        /* New */
+    .summer-sale {
+        color: white;
+        position: absolute;
+        top: 250px;
+        left: 75px;
+        font-size: 26px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+    .now-on {
+        color: white;
+        position: absolute;
+        top: 250px;
+        right: 85px;
+        font-size: 26px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }    
+    /* END men */
