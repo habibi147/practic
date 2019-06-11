@@ -48,6 +48,7 @@
 </div>
     
     <!-- tab content -->
+    <!-- News -->
 <div id="News" class="tabcontent">
     <div class="news-banner">
         <img src="https://syedvintage.co.uk/wp-content/uploads/2018/05/banners.png" style="width:100%;">
@@ -59,22 +60,33 @@
         </div>
     </div>
 </div>
-
-    
-    
-
-
-    <!-- footer -->
-<div class="footer">
-    <div class="footer-left">
-        <p>Website coded by Habibi147</p><br>
-        <p>Contact: mindyourown@business.com</p>
-    </div>
-    <div class="footer-right">
-        <a href="#"><p>FAQs</p></a>
-        <a href="#"><p>Ts & Cs</p></a>
+    <!-- location -->
+<div id="Locations" class="tabcontent">
+    <div class="tab">
+        <button class="tablinks" onclick="openLoc(event,'Richmond')" id="defaultOpen">Richmond</button>
+        <button class="tablinks" onclick="openLoc(event,'Red')">Red</button>
+        <button class="tablinks" onclick="openLoc(event,'Blue')">Blue</button>
+        <button class="tablinks" onclick="openLoc(event,'Green')">Green</button>
+        <button class="tablinks" onclick="openLoc(event,'Yellow')">Yellow</button>    
     </div>
 </div>
+        <!-- locations tabs -->
+    <div id="Richmond" class="tabcontent">
+        <h1>Richmond is nice.</h1>
+    </div>
+    <div id="Blue" class="tabcontent">
+        <h1>Blue</h1>
+    </div>
+    
+    <!-- footer -->
+
+<div class="footer">
+    <h1>CLOTHES.COM</h1>
+    <h3><a href="#">Contact Us</a> | <a href="#">About Us</a> | <a href="#">Ts&amp;Cs</a></h3>
+    <p>Website built by <a href="https://www.en.wikipedia.org/wiki/god">Habibi147</a> | Contact: <a href="#">mindyourown@business.com</a></p>
+</div>
+    
+        
 
     <!-- tab script -->
 <script>
@@ -91,6 +103,27 @@ var i, tabcontent, tablinks;
 
 
     document.getElementById(catName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+    document.getElementById("defaultOpen").click();
+</script>
+    
+    <!-- location script -->
+<script>
+function openLoc(evt, locName) {
+var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+}
+    tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+
+
+    document.getElementById(locName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
