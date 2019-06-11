@@ -128,24 +128,55 @@ body {
 }
 
 .column-container {
-    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: row;
 
 }
 .column {
+    position: relative;
     background-color: white;
     float: left;
-    margin: 10px;    
-    height: 450px;
+    margin: 10px;   
     width: 300px;
-    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
 }
-.column img {
-    min-height: 450px;
-    outline: 2px solid black;
+.column img {    
+    min-height: 425px;
+    display: block
 }
+.column-text {
+    position: absolute;
+    bottom: 0px;
+    outline: 1px solid #C0C0C0;
+    width: 100%;
+    background-color: rgba(220,220,220,0.4);    
+}
+.column-text  p {
+    background: none;
+    font-size: 20px
+}
+.column-text p, h1 {
+    padding: 0px;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    color: black;
+}
+.column-text a {
+    padding: 0px;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.column-text:hover {
+    background-color: rgba(220,220,220,0.7);
+    transition: 0.2s;
+}
+
 
 
     /* sort by */
