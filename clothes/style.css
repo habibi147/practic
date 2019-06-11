@@ -149,9 +149,9 @@ body {
 .column-text {
     position: absolute;
     bottom: 0px;
-    outline: 1px solid #C0C0C0;
     width: 100%;
-    background-color: rgba(220,220,220,0.4);    
+    background-color: rgba(220,220,220,0.5);    
+    outline: none;
 }
 .column-text  p {
     background: none;
@@ -173,8 +173,8 @@ body {
     color: black;
 }
 .column-text:hover {
-    background-color: rgba(220,220,220,0.7);
-    transition: 0.2s;
+    background-color: rgba(220,220,220,0.75);
+    transition: 0.2s ease;
 }
 
 
