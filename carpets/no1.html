@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Dom's Carpets</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+
+    <!-- logo -->
+<div class="logo">
+    <a href="#"><h1>DOMSCARPETS<span class="com">.COM</span></h1></a>
+    <p>Phone: 07123456789</p>
+    <p>Email: mindyourown@business.com</p>
+</div>
+
+    <!-- navbar -->
+<div class="navbar">
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Prices</a>
+    <a href="#">Areas</a>
+    <a href="#">Endorsements</a>
+    <a href="#">Areas</a>
+    <a href="#">Contact Us</a>
+</div>
+
+    <!-- lucky cards -->
+<div class="lucky-cards">
+    <div class="card">
+        <i class="fas fa-pound-sign" style="font-size:25px;"></i>
+        <p>Best prices in town</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-thumbs-up" style="font-size:25px;"></i>
+        <p>Great customer feedback</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-user-check" style="font-size:25px;"></i>
+        <p>Friendly and experienced consutlants</p>
+    </div>
+    <div class="card">
+        <i class="fab fa-paypal" style="font-size:25px;"></i> <i class="fab fa-apple-pay" style="font-size:25px;"></i> <i class="fab fa-cc-visa" style="font-size:25px;"></i>
+        <p>Flexible payment methods</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-tools" style="font-size:25px;"></i>
+        <p>Up-to-date tools of the trade</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-hand-middle-finger" style="font-size:25px;"></i>
+        <p>Ran out of ideas for this one</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-shipping-fast" style="font-size:25px;"></i>
+        <p>Something else about being good</p>
+    </div>
+</div>
+<div class="index-main-content">
+    <div class="intro-box">
+        <h1>Welcome to DomsCarpets.com!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="comp-contaier">
+        <h1 style="margin:5px;padding:5px;background-color:#89b9f0;">Before and After</h1>
+        <div class="comp-text">
+            <p>Fill in here with random waffle wine is bad we are good etc.....</p>
+            <p>Just knicked the pictures from a random site so hopefully you have some we can use.</p>
+        </div>
+        <div class="before-after">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="https://www.proclene.com/workphotos-jan-15/redwine-after.JPG" width="629" height="420">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="https://www.proclene.com/workphotos-jan-15/redwine-before.JPG" width="629" height="420">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="static-comp">
+        <h1 style="margin:5px;padding:5px;background-color:#89b9f0;">Before and After</h1>
+        <p>Fill in here with random waffle wine is bad we are good etc.....</p>
+        <p>Just knicked the pictures from a random site so hopefully you have some we can use.</p>
+        <img src="https://www.proclene.com/before-after-images/more-images/drbefore.JPG" style="width:495px;">
+        <img src="https://www.proclene.com/before-after-images/more-images/drafter.JPG"
+        style="width:495px;">
+    </div>
+</div>
+
+    <!-- footer -->
+<div class="footer">
+    <a href="#"<p><i class="fas fa-arrow-alt-circle-up"></i>To the Top<i class="fas fa-arrow-alt-circle-up"></i></p></a>
+    <p>Extra Footer Info</p>
+</div>
+            <!-- https://www.no1carpetcleaning.co.uk/about-us/gallery.html -->
+            <!-- https://www.proclene.com/before-after-images/ -->
+
+
+            
+    <!-- first slider script -->
+<script>
+    function initComparisons() {
+  var x, i;
+  
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {    
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    w = img.offsetWidth;
+    h = img.offsetHeight;    
+    img.style.width = (w / 2) + "px";
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");    
+    img.parentElement.insertBefore(slider, img);
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";  
+    slider.addEventListener("mousedown", slideReady);    
+    window.addEventListener("mouseup", slideFinish);    
+    slider.addEventListener("touchstart", slideReady);     
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {     
+      e.preventDefault();      
+      clicked = 1;      
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {      
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      
+      if (clicked == 0) return false; 
+      pos = getCursorPos(e)      
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;      
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;      
+      a = img.getBoundingClientRect() 
+      x = e.pageX - a.left;      
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {      
+      img.style.width = x + "px";     
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+<script>    
+initComparisons();
+</script>
+    <!-- END first slider script -->
+
+
+
+
+</body>
+</html>
