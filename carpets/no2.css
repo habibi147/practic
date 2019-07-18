@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif; 'Pacifico', cursive;
+     background-image: linear-gradient(rgb(0, 255, 255), rgb(255, 255, 255));  
+}
+
+.body-container {
+    width: 1200px;
+    margin: auto;
+    box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.2), -4px 0px 5px 0px rgba(0,0,0,0.2);
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 1;
+    max-width: 1200px;
+    margin: auto;
+}
+.navbar a {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;  
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 18px;  
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+    cursor: pointer;
+    transition: .1s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}   
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.icons {
+	float: right;
+    padding: none;
+    }
+.icons a:hover {
+    background-color: grey;
+    transition: .5s;
+}
+
+
+.logo-container {
+    margin: auto;
+    max-width: 1200px;
+    background-color: white;
+}
+.logo {
+    overflow: auto;
+}
+.logo a {
+	font-family: 'Pacifico';	
+	text-decoration: none;
+    color: black;
+    }
+.logo a:hover {
+	color: blue;
+    }
+.dotcom {
+	font-family: 'Pacifico';
+	color: blue;
+    }
+.logo img {
+    float: left;
+    display: inline;
+}
+.logo h1 {
+    position: relative;
+    display: inline;
+    margin-left: 30px;
+}
+.logo i {
+    font-size: 40px;
+}
+
+    /* pricing comp */
+.pricing-section {
+    max-width: 1200px;    
+    margin: auto;
+}
+.pricing-section img {
+    position: absolute;
+    width: 1200px;
+}
+@media (max-width:629px) {
+  img#price-bg {
+    display: none;
+  }
+}
+.pricingdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricingdiv ul.theplan  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    background: blue;
+    position: relative;
+    width: 250px; 
+    height: 350px;
+    margin-right: 10px; 
+    margin-bottom: 1em;
+    margin-top: 10px;
+    transition: all .5s;
+    text-align: center;
+    font-size: 20px;
+}
+
+.pricingdiv ul.theplan:hover    { 
+    transform: scale(1.05);
+    transition: all .5s;
+    z-index: 100;
+    box-shadow: 0 0 10px gray;
+}
+
+.pricingdiv ul.theplan li   {
+    margin: 10px 20px;
+    position: relative;
+}
+
+.pricingdiv ul.theplan li.title {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+}
+
+.pricingdiv ul.theplan:nth-of-type(2)   {
+    background: #00BFFF;
+}
+    
+.pricingdiv ul.theplan:nth-of-type(3)   {
+    background: blue;
+}
+.pricingdiv ul.theplan:nth-of-type(4)   {
+    background: #00BFFF;
+}
+
+.pricingdiv ul.theplan:last-of-type { 
+    margin-right: 0;
+}
+
+
+.pricingdiv ul.theplan li:last-of-type  {
+    text-align: center;
+    margin-top: auto; 
+}  
+
+.pricingdiv a.pricebutton   {
+    background: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: navy;
+    text-transform: uppercase;
+    min-width: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+  .pricingdiv ul.theplan{
+    border-radius: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .pricingdiv ul.theplan:hover  {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .pricingdiv a.pricebutton {
+    display: block;
+  }
+}
+
+.form-container {
+    margin: auto;
+    display: flex;
+    margin-top: 88px;
+    background-color: #ffffff;
+    max-width: 1200px
+}
+.callback  {
+    width: 50%;
+    padding-left: 20px;
+}
+form {
+    font-family: Arial;
+}
+.container {
+    padding: 20px;
+    background-color: aqua;
+    margin-bottom: -30px;
+}
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=checkbox] {
+    margin-top: 16px;
+}
+input[type=submit] {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+}
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.contact {
+    text-align: right;
+    width: 50%;
+    padding-right: 20px;
+}
+.subject {
+    width: 100%;
+    height: 150px;
+    margin: 8px 0;
+}
+
+.faq-title {
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0px;
+}
+.faq {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0px 10px 10px 50px;
+    max-width: 1200px;
+    display: flex;
+}
+.faq-box {
+    text-align: center;
+    padding: 0px 12px;
+    margin-top: -24px;
+}
+
+.footer {
+    margin: auto;
+    margin-bottom: 0px;
+    max-wdith: 1200px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 90%;
+}
+
+
